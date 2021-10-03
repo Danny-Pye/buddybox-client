@@ -1,0 +1,60 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imageContainer{
+    display: flex;
+}
+
+.active {
+    font-size: 1.3rem;
+}
+
+.card-footer img{
+    width: 100%;
+    height: auto;
+}
+
+.like-unlike-edit-delete p {
+    /*margin: 0 5% 0 5%;*/
+    display: flex;
+    align-items: center;
+    padding: 15px 4% 0 4%;
+    font-size: 0.7rem;
+}
+
+.like-unlike-edit-delete span {
+    display: flex;
+    align-items: center;
+    padding: 15px 1% 0 0;
+}
+
+.like-unlike-edit-delete a {
+    display: flex;
+    align-items: center;
+    padding: 15px 1% 0 4%;
+    color: black;
+}
+
+.like-unlike-edit-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-item {
+    padding: 15px 0 0 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*padding: '15px 0 0 0', alignSelf: 'end', fontSize: '20px', cursor: 'pointer'*/
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.colour-for-dashboard {
+    background-color: #F9F9F9;
+}
