@@ -45,16 +45,16 @@ const Post = ({post, handleDelete, handleUnlike, handleLike, handleComment, comm
                         <div className="like-unlike-edit-delete">
 
 
-                            <p>like</p>
+
                             <span>{post.likes.length}</span>{state && state.user && post.likes && post.likes.includes(state.user._id) ?
                             <LikeFilled className="card-item"/> :
-                            <LikeOutlined onClick={() => handleLike(post._id)} className="card-item"/>} <p>unlike</p>
+                            <LikeOutlined onClick={() => handleLike(post._id)} className="card-item"/>}
                             <DislikeOutlined onClick={() => handleUnlike(post._id)} className="card-item"/> <Link
                             href={`/post/${post._id}`}><a>comments</a></Link><span>{post.comments.length}</span>
                             <CommentOutlined onClick={() => handleComment(post)} className="card-item"/>
                         {state && state.user && state.user._id === post.postedBy._id && (<>
-                            <p>edit</p> <EditOutlined onClick={() => router.push(`/user/post/${post._id}`)}
-                            className="card-item"/>  <p>delete</p> <DeleteOutlined
+                             <EditOutlined onClick={() => router.push(`/user/post/${post._id}`)}
+                            className="card-item"/>   <DeleteOutlined
                             onClick={() => handleDelete(post)} className="card-item"/>
                             </>
                             )}
